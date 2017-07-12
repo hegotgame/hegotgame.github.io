@@ -1,0 +1,21 @@
+body {
+	background-color: orange;
+}
+h1{
+	color: blue;
+}
+.boldClass{
+	font-weight:bold;
+}
+#bigID{
+	font-size: 24px;
+}
+a:hover {
+	background-color: red;
+}
+a:visited {
+	color: purple;
+}
+li:nth-child(3) {
+	background: green;
+}
