@@ -1,16 +1,5 @@
 body {
 	background-image: url("https://www.sendiks.com/wp-content/uploads/2016/02/Sendiks.jpg");
-}
-.container {
-	position: relative;
-}
-
-.center {
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 72px;
-}
 img {
 	border-radius: 16px;
 }
