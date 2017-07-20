@@ -1,0 +1,19 @@
+body {
+	background-image: url("https://cdn.pixabay.com/photo/2014/12/14/18/33/cube-568105_960_720.jpg");
+}
+p.di {
+    font-size: 48px;
+    font-weight: bold;
+    color: GreenYellow;
+}
+h1 {
+	font-size: 64px;
+	font-weight: bold;
+	color:aqua;
+}
+a:hover {
+	background-color: red;
+}
+a:visited {
+	color: purple;
+}
