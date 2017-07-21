@@ -1,31 +1,37 @@
 "use strict"
 function roll20() {
 	var twentyDi = Math.floor(Math.random()*20);
+	parseInt(twentyDi);
 	document.getElementById("20").innerHTML = twentyDi;
     return twentyDi;
 }
 function roll12() {
 	var tweleveDi = Math.floor(Math.random()*12);
+	parseInt(tweleveDi);
 	document.getElementById("12").innerHTML = tweleveDi;
     return tweleveDi;
 }
 function roll10() {
 	var tenDi = Math.floor(Math.random()*10);
+	parseInt(tenDi);
 	document.getElementById("10").innerHTML = tenDi;
     return tenDi;
 }
 function roll8() {
 	var eightDi = Math.floor(Math.random()*8);
+	parseInt(eightDi);
 	document.getElementById("8").innerHTML = eightDi;
     return eightDi;
 }
 function roll6() {
 	var sixDi = Math.floor(Math.random()*6);
+	parseInt(sixDi);
 	document.getElementById("6").innerHTML = sixDi;
     return sixDi;
 }
 function roll4() {
 	var fourDi = Math.floor(Math.random()*4);
+	parseInt(fourDi);
 	document.getElementById("4").innerHTML = fourDi;
     return fourDi;
 }
@@ -36,43 +42,44 @@ function getLottery () {
 	var l8 = roll8();
 	var l6 = roll6();
 	var l4 = roll4();
-	var lA = [l20, l12, l10, l8, l6, l4]
-	console.log(lA);
-	console.log(l20);
-	console.log(l12);
-	console.log(l10);
-	console.log(l8);
-	console.log(l6);
-	console.log(l4);
+	var lA = [l20, l12, l10, l8, l6, l4];
+	console.log(lA)
+	return lA;
 }
 
-function getInputs() {
+function getInputs () {
     var up20 = document.getElementById("input20");
     var in20 = up20.options[up20.selectedIndex].value;
 	var bet20 = parseInt(in20);
-	console.log(in20);
 	var up12 = document.getElementById("input12");
     var in12 = up12.options[up12.selectedIndex].value;
 	var bet12 = parseInt(in12);
-	console.log(in12);
     var up10 = document.getElementById("input10");
     var in10 = up10.options[up10.selectedIndex].value;
 	var bet10 = parseInt(in10);
-	console.log(in10);
     var up8 = document.getElementById("input8");
     var in8 = up8.options[up8.selectedIndex].value;
 	var bet8 = parseInt(in8);
-	console.log(in8);
     var up6 = document.getElementById("input6");
     var in6 = up6.options[up6.selectedIndex].value;
 	var bet6 = parseInt(in6);
-	console.log(in6);
     var up4 = document.getElementById("input4");
     var in4 = up4.options[up4.selectedIndex].value;
 	var bet4 = parseInt(in4);
-	console.log(in4);
 	var betA = [bet20, bet12, bet10, bet8, bet6, bet4];
 	console.log(betA);
+	return betA;
+}
+
+function winPowerDice () {
+	var bet = getInputs ();
+	var lotto = getLottery ();
+	if (bet[0] === lotto[0]) {
+		console.log ("WINNNER");
+	}
+	else {
+		console.log ("you lose");
+	}
 }
 
 function roll20b() {
