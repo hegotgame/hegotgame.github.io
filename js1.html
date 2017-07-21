@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>HW #2 - The Dice Game</title>
+		<script type="text/javascript" src="dice.js"></script>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewpoint" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -17,7 +18,7 @@
 Place your bets!<br>
 
 <label>20 Dice</label>
-             <select id = "myList">
+             <select id = "input20">
                <option value = "0">0</option>
                <option value = "1">1</option>
                <option value = "2">2</option>
@@ -40,7 +41,7 @@ Place your bets!<br>
                <option value = "19">19</option>
              </select>
 <label>12 Dice</label>
-             <select id = "myList">
+             <select id = "input12">
                <option value = "0">0</option>
                <option value = "1">1</option>
                <option value = "2">2</option>
@@ -55,7 +56,7 @@ Place your bets!<br>
                <option value = "11">11</option>
              </select>
 <label>10 Dice</label>
-             <select id = "myList">
+             <select id = "input10">
                <option value = "0">0</option>
                <option value = "1">1</option>
                <option value = "2">2</option>
@@ -68,7 +69,7 @@ Place your bets!<br>
                <option value = "9">9</option>
              </select>
 <label>8 Dice</label>
-             <select id = "myList">
+             <select id = "input8">
                <option value = "0">0</option>
                <option value = "1">1</option>
                <option value = "2">2</option>
@@ -79,7 +80,7 @@ Place your bets!<br>
                <option value = "7">7</option>
              </select>
 <label>6 Dice</label>
-             <select id = "myList">
+             <select id = "input6">
                <option value = "0">0</option>
                <option value = "1">1</option>
                <option value = "2">2</option>
@@ -88,14 +89,14 @@ Place your bets!<br>
                <option value = "5">5</option>
              </select>
 <label>4 Dice</label>
-             <select id = "myList">
+             <select id = "input4">
                <option value = "0">0</option>
                <option value = "1">1</option>
                <option value = "2">2</option>
                <option value = "3">3</option>
              </select>
 
-<button type="button" onclick="rollAll()">Player 1</button>
+<button type="button" onclick="getLottery(), getInputs()">Player 1</button>
 
 <p class="di" id="20">20 sided</p>
 <p class="di" id="12">12 sided</p>
@@ -117,7 +118,6 @@ Place your bets!<br>
 
 <a href="index.html">Return to Home Page</a>
 
-<script type="text/javascript" src="dice.js"></script>
 
 </body>
 </html>
