@@ -74,8 +74,11 @@ function getInputs () {
 function winPowerDice () {
 	var bet = getInputs ();
 	var lotto = getLottery ();
-	if (bet[0] === lotto[0]) {
+	if (lotto[0] === bet[0]) {
 		console.log ("WINNNER");
+	}
+	else if (lotto[1] === bet[1]) {
+		console.log ("small win")
 	}
 	else {
 		console.log ("you lose");
