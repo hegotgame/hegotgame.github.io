@@ -107,19 +107,44 @@ function whiteTotal (bet, lotto) {
 	return whiteSum;
 }
 
-function winPowerDice () {
-	var bet = getInputs ();
-	var lotto = getLottery ();
-	var white = whiteTotal (bet, lotto);
-	if (lotto[0] === bet[0] && lotto[1] === bet[1] && lotto[2] === bet[2] && lotto[3] === bet[3] && lotto[4] === bet[4] && lotto[5] === bet[5]) {
-		console.log ("GRAND_PRIZE_WINNNER");
+function calcPrize (bet, lotto, white) {
+	if (lotto[0] === bet[0] && white === 5) {
+		console.log ("GRAND_PRIZE_WINNNER 5P");
 	}
-	else if (lotto[1] === bet[1]) {
-		console.log ("small win")
+	else if (white === 5) {
+		console.log ("prize #1 winner 5");
+	}
+	else if (lotto[0] === bet[0] && white === 4) {
+		console.log ("prize #2 winner 4P");
+	}
+	else if (white === 4) {
+		console.log ("prize #3 winner 4");
+	}
+	else if (lotto[0] === bet[0] && white === 3) {
+		console.log ("prize #4 winner 3P");
+	}
+	else if (white === 3) {
+		console.log ("prize #5 winner 3");
+	}
+	else if (lotto[0] === bet[0] && white === 2) {
+		console.log ("prize #6 winner 2P");
+	}
+	else if (lotto[0] === bet[0] && white === 1) {
+		console.log ("prize #7 winner 1P")
+	}
+	else if (lotto[0] === bet[0] && white === 0) {
+		console.log ("prize #8 winner 0P")
 	}
 	else {
 		console.log ("you lose");
 	}
+}
+
+function winPowerDice () {
+	var bet = getInputs ();
+	var lotto = getLottery ();
+	var white = whiteTotal (bet, lotto);
+	calcPrize (bet, lotto, white);
 }
 /*
 function roll20b() {
