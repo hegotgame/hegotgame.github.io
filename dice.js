@@ -71,11 +71,48 @@ function getInputs () {
 	return betA;
 }
 
+function whiteTotal (bet, lotto) {
+	if (bet[1] === lotto[1]) {
+		var b1 = 1;
+	}
+	else {
+		var b1 = 0;
+	}
+	if (bet[2] === lotto[2]) {
+		var b2 = 1;
+	}
+	else {
+		var b2 = 0;
+	}
+	if (bet[3] === lotto[3]) {
+		var b3 = 1;
+	}
+	else {
+		var b3 = 0;
+	}
+	if (bet[4] === lotto[4]) {
+		var b4 = 1;
+	}
+	else {
+		var b4 = 0;
+	}
+	if (bet[5] === lotto[5]) {
+		var b5 = 1;
+	}
+	else {
+		var b5 = 0;
+	}
+	var whiteSum = b1 + b2 + b3 + b4 + b5;
+	console.log("white is " + whiteSum)
+	return whiteSum;
+}
+
 function winPowerDice () {
 	var bet = getInputs ();
 	var lotto = getLottery ();
-	if (lotto[0] === bet[0]) {
-		console.log ("WINNNER");
+	var white = whiteTotal (bet, lotto);
+	if (lotto[0] === bet[0] && lotto[1] === bet[1] && lotto[2] === bet[2] && lotto[3] === bet[3] && lotto[4] === bet[4] && lotto[5] === bet[5]) {
+		console.log ("GRAND_PRIZE_WINNNER");
 	}
 	else if (lotto[1] === bet[1]) {
 		console.log ("small win")
@@ -84,7 +121,7 @@ function winPowerDice () {
 		console.log ("you lose");
 	}
 }
-
+/*
 function roll20b() {
 	var twentyDi = Math.floor(Math.random()*20);
 	document.getElementById("20b").innerHTML = twentyDi;
@@ -118,7 +155,7 @@ function roll4b() {
 function rollAllb () {
 	roll20b(), roll12b(), roll10b(), roll8b(), roll6b(), roll4b();
 }
-/*
+
 function sum () {
 	var sum = fourDi + sixDi + eightDi + tenDi + tweleveDi + twentyDi;
 	document.getElementbyId("total").innerHTML = sum;
