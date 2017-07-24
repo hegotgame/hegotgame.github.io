@@ -109,31 +109,31 @@ function whiteTotal (bet, lotto) {
 
 function calcPrize (bet, lotto, white) {
 	if (lotto[0] === bet[0] && white === 5) {
-		console.log ("GRAND_PRIZE_WINNNER 5P");
+		console.log ("Win 250,000 - GRAND PRIZE WINNNER");
 	}
 	else if (white === 5) {
-		console.log ("prize #1 winner 5");
+		console.log ("Win 5,000 - Prize #1 winner 5");
 	}
 	else if (lotto[0] === bet[0] && white === 4) {
-		console.log ("prize #2 winner 4P");
+		console.log ("Win 250 - Prize #2 winner 4P");
 	}
 	else if (white === 4) {
-		console.log ("prize #3 winner 4");
+		console.log ("Win 25 - Prize #3 winner 4");
 	}
 	else if (lotto[0] === bet[0] && white === 3) {
-		console.log ("prize #4 winner 3P");
+		console.log ("Win 25 - Prize #4 winner 3P");
 	}
 	else if (white === 3) {
-		console.log ("prize #5 winner 3");
+		console.log ("Win 3 - Prize #5 winner 3");
 	}
 	else if (lotto[0] === bet[0] && white === 2) {
-		console.log ("prize #6 winner 2P");
+		console.log ("Win 3 - Prize #6 winner 2P");
 	}
 	else if (lotto[0] === bet[0] && white === 1) {
-		console.log ("prize #7 winner 1P")
+		console.log ("Win 2 - Prize #7 winner 1P")
 	}
 	else if (lotto[0] === bet[0] && white === 0) {
-		console.log ("prize #8 winner 0P")
+		console.log ("Win 2 - Prize #8 winner 0P")
 	}
 	else {
 		console.log ("you lose");

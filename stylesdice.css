@@ -4,12 +4,22 @@ body {
 p.di {
     font-size: 48px;
     font-weight: bold;
-    color: GreenYellow;
+    color: White;
+}
+p.power {
+    font-size: 48px;
+    font-weight: bold;
+    color: Red;
 }
 h1 {
 	font-size: 64px;
 	font-weight: bold;
-	color:aqua;
+	color: Black;
+}
+h3 {
+	font-size: 22px;
+	font-weight: bold;
+	color: Black;
 }
 a:hover {
 	background-color: red;
