@@ -15,17 +15,18 @@
 <body>
 <h1>Power Dice!</h1>
 
-<u><i>Instructions</i></u>
 <h3>
+<u><i>Instructions</i></u><br>
 1. Press F12 and view your console log<br>
 2. Predict what six dice will "hit"<br>
 3. Roll 'Em (press the Play Power Dice! button)<br>
 4. Watch the console log and see what happens<br>
 Note: See your odds of winning below</h3>
 
-Place your bets!<br>
 
-<label>POWER 20 Dice</label>
+<table>
+<tr><td>
+<p class="label">Pick POWER 20</p>
              <select id = "input20">
                <option value = "0">0</option>
                <option value = "1">1</option>
@@ -47,8 +48,11 @@ Place your bets!<br>
                <option value = "17">17</option>
                <option value = "18">18</option>
                <option value = "19">19</option>
-             </select>
-<label>12 Dice</label>
+             </select></h4>
+<p class="power" id="20">POWER 20 sided dice</p>
+</td></tr>
+<tr><td>
+<p class="label">Pick the 12</p>
              <select id = "input12">
                <option value = "0">0</option>
                <option value = "1">1</option>
@@ -63,7 +67,10 @@ Place your bets!<br>
                <option value = "10">10</option>
                <option value = "11">11</option>
              </select>
-<label>10 Dice</label>
+<p class="di" id="12">12 sided dice</p>
+</td></tr>
+<tr><td>
+<p class="label">Pick the 10</p>
              <select id = "input10">
                <option value = "0">0</option>
                <option value = "1">1</option>
@@ -76,7 +83,10 @@ Place your bets!<br>
                <option value = "8">8</option>
                <option value = "9">9</option>
              </select>
-<label>8 Dice</label>
+<p class="di" id="10">10 sided dice</p>
+</td></tr>
+<tr><td>
+<p class="label">Pick the 8</p>
              <select id = "input8">
                <option value = "0">0</option>
                <option value = "1">1</option>
@@ -87,7 +97,10 @@ Place your bets!<br>
                <option value = "6">6</option>
                <option value = "7">7</option>
              </select>
-<label>6 Dice</label>
+<p class="di" id="8">8 sided dice</p>
+</td></tr>
+<tr><td>
+<p class="label">Pick the 6</p>
              <select id = "input6">
                <option value = "0">0</option>
                <option value = "1">1</option>
@@ -96,22 +109,20 @@ Place your bets!<br>
                <option value = "4">4</option>
                <option value = "5">5</option>
              </select>
-<label>4 Dice</label>
+<p class="di" id="6">6 sided dice</p>
+</td></tr>
+<tr><td>
+<p class="label">Pick the 4</p>
              <select id = "input4">
                <option value = "0">0</option>
                <option value = "1">1</option>
                <option value = "2">2</option>
                <option value = "3">3</option>
              </select>
+<p class="di" id="4">4 sided dice</p>
+</td></tr></table>
 
 <button type="button" onclick="winPowerDice ()">Play Power Dice!</button>
-
-<p class="power" id="20">POWER 20 sided dice</p>
-<p class="di" id="12">12 sided dice</p>
-<p class="di" id="10">10 sided dice</p>
-<p class="di" id="8">8 sided dice</p>
-<p class="di" id="6">6 sided dice</p>
-<p class="di" id="4">4 sided dice</p>
 
 <h3><u>Dice Picked Correctly; Prizes; Odds of Winning</u><br>
 POWER + ALL 5 WHITE<br>

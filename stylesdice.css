@@ -14,12 +14,26 @@ p.power {
 h1 {
 	font-size: 64px;
 	font-weight: bold;
-	color: Black;
+	color: White;
 }
 h3 {
 	font-size: 22px;
 	font-weight: bold;
-	color: Black;
+	color: White;
+}
+p.label {
+	font-size: 18px;
+	font-weight: bold;
+	color: White;
+}
+table, th, td {
+    border: 4px red;
+}
+th, td {
+    padding: 2px;
+}
+tr {
+    background-color: black;
 }
 a:hover {
 	background-color: red;

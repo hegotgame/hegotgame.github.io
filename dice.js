@@ -103,7 +103,7 @@ function whiteTotal (bet, lotto) {
 		var b5 = 0;
 	}
 	var whiteSum = b1 + b2 + b3 + b4 + b5;
-	console.log("white is " + whiteSum)
+	console.log("# of white dice correct is " + whiteSum)
 	return whiteSum;
 }
 
@@ -115,25 +115,25 @@ function calcPrize (bet, lotto, white) {
 		console.log ("Win 5,000 - Prize #1 winner 5");
 	}
 	else if (lotto[0] === bet[0] && white === 4) {
-		console.log ("Win 250 - Prize #2 winner 4P");
+		console.log ("Win 250 - Prize #2 winner 4+P");
 	}
 	else if (white === 4) {
 		console.log ("Win 25 - Prize #3 winner 4");
 	}
 	else if (lotto[0] === bet[0] && white === 3) {
-		console.log ("Win 25 - Prize #4 winner 3P");
+		console.log ("Win 25 - Prize #4 winner 3+P");
 	}
 	else if (white === 3) {
 		console.log ("Win 3 - Prize #5 winner 3");
 	}
 	else if (lotto[0] === bet[0] && white === 2) {
-		console.log ("Win 3 - Prize #6 winner 2P");
+		console.log ("Win 3 - Prize #6 winner 2+P");
 	}
 	else if (lotto[0] === bet[0] && white === 1) {
-		console.log ("Win 2 - Prize #7 winner 1P")
+		console.log ("Win 2 - Prize #7 winner 1+P")
 	}
 	else if (lotto[0] === bet[0] && white === 0) {
-		console.log ("Win 2 - Prize #8 winner 0P")
+		console.log ("Win 2 - Prize #8 winner 0+P")
 	}
 	else {
 		console.log ("you lose");
